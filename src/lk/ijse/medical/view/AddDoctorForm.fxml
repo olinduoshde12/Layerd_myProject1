@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="848.0" prefWidth="1608.0" style="-fx-background-color: #e1ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.AddDoctorFormController">
+   <children>
+      <AnchorPane prefHeight="74.0" prefWidth="1608.0" style="-fx-background-color: #002834;">
+         <children>
+            <Label layoutX="112.0" layoutY="13.0" text="Doctor Add Form" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="22.0" layoutY="9.0">
+               <image>
+                  <Image url="@../pic/doctorDTO.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="1312.0" layoutY="13.0" prefHeight="49.0" prefWidth="133.0" stylesheets="@../pic/out.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="74.0" prefHeight="290.0" prefWidth="1608.0">
+         <children>
+            <Label layoutX="28.0" layoutY="24.0" prefHeight="38.0" prefWidth="149.0" text="Docotr_Id -:">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDoctor" layoutX="180.0" layoutY="19.0" prefHeight="49.0" prefWidth="196.0">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtName" labelFloat="true" layoutX="28.0" layoutY="91.0" onAction="#NameOnAction" prefHeight="44.0" prefWidth="318.0" promptText="Doctor_name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtType" labelFloat="true" layoutX="438.0" layoutY="91.0" prefHeight="44.0" prefWidth="318.0" promptText="Doctor_Type">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtDays" labelFloat="true" layoutX="857.0" layoutY="91.0" prefHeight="44.0" prefWidth="318.0" promptText="Doctor_Alive_Days">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtTime" labelFloat="true" layoutX="1266.0" layoutY="91.0" prefHeight="44.0" prefWidth="318.0" promptText="Doctor_Alive_Time">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="28.0" layoutY="195.0" prefHeight="44.0" prefWidth="318.0" promptText="Contact Number">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="464.0" layoutY="202.0" onAction="#addOnAction" prefHeight="49.0" prefWidth="171.0" style="-fx-background-color: #187277; -fx-background-radius: 12;" text="Add" textFill="WHITE" />
+            <JFXButton layoutX="745.0" layoutY="202.0" onAction="#updateOnAction" prefHeight="49.0" prefWidth="171.0" style="-fx-background-color: #abfafa; -fx-background-radius: 12;" text="Update" />
+            <JFXButton layoutX="1004.0" layoutY="200.0" onAction="#DeleteOnAction" prefHeight="49.0" prefWidth="171.0" style="-fx-background-color: #fe4b87; -fx-background-radius: 12;" text="Delete" />
+            <ImageView layoutX="477.0" layoutY="212.0">
+               <image>
+                  <Image url="@../pic/icons8-new-copy-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="756.0" layoutY="208.0">
+               <image>
+                  <Image url="@../pic/update.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="1016.0" layoutY="206.0">
+               <image>
+                  <Image url="@../pic/delete.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tbl1" layoutX="14.0" layoutY="372.0" prefHeight="451.0" prefWidth="1429.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="167.0" text="Doctor_Id" />
+          <TableColumn fx:id="colName" prefWidth="289.9999694824219" text="Doctor_Name" />
+            <TableColumn fx:id="colType" prefWidth="273.0" text="Doctor Type" />
+            <TableColumn fx:id="colays" prefWidth="260.0" text="Alive_Days" />
+            <TableColumn fx:id="colTime" prefWidth="221.0" text="Alive_Time" />
+            <TableColumn fx:id="colContact" prefWidth="217.0" text="Contact_Number" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

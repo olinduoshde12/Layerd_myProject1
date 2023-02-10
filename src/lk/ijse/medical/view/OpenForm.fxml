@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="829.0" prefWidth="1548.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.reciption.OpenFormController">
+   <children>
+      <ImageView fitHeight="836.0" fitWidth="1548.0">
+         <image>
+            <Image url="@../pic/Medical-Software-scaled.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="548.0" layoutY="753.0" onAction="#StartOnAction" prefHeight="47.0" prefWidth="391.0" style="-fx-background-radius: 50; -fx-border-color: blue; -fx-border-radius: 50;" stylesheets="@../pic/Style.css" text="START">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXProgressBar fx:id="laoding" layoutY="822.0" prefHeight="16.0" prefWidth="1548.0" />
+      <Label fx:id="lbl1" layoutX="14.0" layoutY="795.0" prefHeight="21.0" prefWidth="121.0" text="Loading.....">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lbl2" alignment="CENTER" layoutX="333.0" layoutY="301.0" prefHeight="85.0" prefWidth="822.0" style="-fx-background-radius: 50; -fx-background-color: BLUE;" text="NAVALOKA MEDICL CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="58.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

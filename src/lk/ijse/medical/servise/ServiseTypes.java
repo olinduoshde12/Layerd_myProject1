@@ -1,0 +1,5 @@
+package lk.ijse.medical.servise;
+
+public enum ServiseTypes {
+    APPOINMENT,DOCTOR,EMPLOYEE,MEDICINE,ORDER,ORDERDETAIL,MEDICINEDETAILS,PAYMENT,PLACEAPPOINMENT;
+}

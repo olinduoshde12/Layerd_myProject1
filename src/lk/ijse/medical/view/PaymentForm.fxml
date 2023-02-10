@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="882.0" prefWidth="1615.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.reciption.PaymentFormController">
+   <children>
+      <AnchorPane prefHeight="64.0" prefWidth="1615.0" style="-fx-background-color: #073837;">
+         <children>
+            <Label layoutX="67.0" layoutY="11.0" text="Payemt Form" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="cobO_id" layoutX="22.0" layoutY="264.0" prefHeight="43.0" prefWidth="229.0" />
+      <Label layoutX="22.0" layoutY="210.0" prefHeight="30.0" prefWidth="206.0" text="Place Order id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="95.0" text="Payment_Id">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPL_ID" layoutX="195.0" layoutY="93.0" prefHeight="43.0" prefWidth="160.0">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtA_id" editable="false" layoutX="334.0" layoutY="264.0" prefHeight="43.0" prefWidth="249.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="334.0" layoutY="210.0" prefHeight="30.0" prefWidth="160.0" text="Appoinment id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDate" editable="false" layoutX="673.0" layoutY="259.0" prefHeight="43.0" prefWidth="249.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="683.0" layoutY="210.0" prefHeight="30.0" prefWidth="68.0" text="date">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMedicineTotal" editable="false" layoutX="1022.0" layoutY="259.0" prefHeight="43.0" prefWidth="249.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="1022.0" layoutY="210.0" prefHeight="30.0" prefWidth="182.0" text="Medicine Total Rs.">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtP_name" editable="false" layoutX="25.0" layoutY="387.0" prefHeight="43.0" prefWidth="249.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="25.0" layoutY="343.0" prefHeight="30.0" prefWidth="160.0" text="Pateint name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtD_name" editable="false" layoutX="334.0" layoutY="387.0" prefHeight="54.0" prefWidth="271.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="334.0" layoutY="343.0" prefHeight="30.0" prefWidth="160.0" text="Doctor Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTotal" editable="false" layoutX="683.0" layoutY="387.0" prefHeight="43.0" prefWidth="249.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="681.0" layoutY="343.0" prefHeight="30.0" prefWidth="213.0" text="Appoinment Total Rs.">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-3.0" layoutY="149.0" prefHeight="2.0" prefWidth="1615.0" />
+      <Label layoutX="33.0" layoutY="836.0" text="Full Total :-">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFullTotal" layoutX="263.0" layoutY="836.0" prefHeight="39.0" prefWidth="229.0">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="836.0" prefHeight="39.0" prefWidth="53.0" text="Rs.">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1048.0" layoutY="387.0" onAction="#PayOnAction" prefHeight="54.0" prefWidth="213.0" style="-fx-background-radius: 13; -fx-background-color: #073837;" text="Pay" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <Button layoutX="1295.0" layoutY="387.0" mnemonicParsing="false" onAction="#reportOnAction" prefHeight="54.0" prefWidth="182.0" text="Report" />
+      <TableView fx:id="tblPay" layoutX="25.0" layoutY="504.0" prefHeight="307.0" prefWidth="1457.0">
+        <columns>
+          <TableColumn fx:id="colP_id1" prefWidth="130.99996948242188" text="Pl_id" />
+          <TableColumn fx:id="colA_id1" prefWidth="120.0" text="A_id" />
+            <TableColumn fx:id="colDate1" prefWidth="104.0" text="Date" />
+            <TableColumn fx:id="col_P_name" prefWidth="189.0" text="P_name" />
+            <TableColumn fx:id="colD_name" prefWidth="255.0" text="D_name" />
+            <TableColumn fx:id="colM_tot" prefWidth="148.0" text="M_total" />
+            <TableColumn fx:id="colAp_Tot" prefWidth="271.0" text="Appoin_Total" />
+            <TableColumn fx:id="colF_tot" prefWidth="237.0" text="Full_Total" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

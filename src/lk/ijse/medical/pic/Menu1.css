@@ -1,0 +1,12 @@
+.menubar1:hover{
+    -fx-border-color: #5a0170;
+    -fx-border-width: 0px 0px 5px 0px;
+}
+.menubar2:hover{
+    -fx-border-color: #19343e;
+    -fx-border-width: 0px 0px 5px 0px;
+}
+.menubar3:hover{
+    -fx-border-color: #d4a004;
+    -fx-border-width: 0px 0px 5px 0px;
+}

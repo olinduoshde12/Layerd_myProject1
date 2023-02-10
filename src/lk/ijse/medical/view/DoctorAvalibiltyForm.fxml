@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="784.0" prefWidth="1534.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.reciption.DoctorAvalibiltyFormController">
+   <children>
+      <AnchorPane prefHeight="55.0" prefWidth="1610.0" style="-fx-background-color: #0c6157;">
+         <children>
+            <Label layoutX="697.0" layoutY="10.0" text="Doctor Types" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="21.0" layoutY="130.0" onAction="#HeartOnAction" prefHeight="176.0" prefWidth="244.0" style="-fx-background-radius: 50; -fx-border-color: blue; -fx-border-radius: 50;" stylesheets="@../pic/heart.css" text="Heart Disses">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="316.0" layoutY="130.0" onAction="#pediOnAction" prefHeight="176.0" prefWidth="244.0" style="-fx-background-radius: 50; -fx-border-color: blue; -fx-border-radius: 50;" stylesheets="@../pic/pedi.css" text="Pediatrician">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="625.0" layoutY="130.0" onAction="#DemoOnAction" prefHeight="176.0" prefWidth="244.0" style="-fx-background-radius: 50; -fx-border-color: blue; -fx-border-radius: 50;" stylesheets="@../pic/Demoscrip.css" text="Dematologist">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="949.0" layoutY="130.0" onAction="#PsyOnAction" prefHeight="176.0" prefWidth="244.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: blue;" stylesheets="@../pic/psyi.css" text="Psychatrist">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1272.0" layoutY="130.0" prefHeight="176.0" prefWidth="244.0" style="-fx-background-radius: 50; -fx-border-color: blue; -fx-border-radius: 50;" stylesheets="@../pic/Anes.css" text="Anesthaesiologist">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="101.0" fitWidth="105.0" layoutX="91.0" layoutY="92.0">
+         <image>
+            <Image url="@../pic/heart-attack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="105.0" layoutX="386.0" layoutY="92.0">
+         <image>
+            <Image url="@../pic/pediatrics.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="105.0" layoutX="681.0" layoutY="92.0">
+         <image>
+            <Image url="@../pic/allergy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="105.0" layoutX="1011.0" layoutY="92.0">
+         <image>
+            <Image url="@../pic/psychiatrist.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="105.0" layoutX="1342.0" layoutY="92.0">
+         <image>
+            <Image url="@../pic/anesthesia.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="contxt1" layoutX="-2.0" layoutY="336.0" prefHeight="443.0" prefWidth="1610.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

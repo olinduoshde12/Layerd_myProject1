@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" prefHeight="840.0" prefWidth="1908.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.manager.ManagerDashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="71.0" prefWidth="1927.0" style="-fx-background-color: #013741;">
+         <children>
+            <Label layoutX="14.0" layoutY="13.0" text="Manager Dash Board" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="1582.0" layoutY="16.0" prefHeight="40.0" prefWidth="89.0" text="Time-:" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl1" layoutX="1689.0" layoutY="8.0" prefHeight="56.0" prefWidth="231.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="433.0" layoutY="13.0" prefHeight="40.0" prefWidth="89.0" text="Date-:" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl2" layoutX="529.0" layoutY="8.0" prefHeight="56.0" prefWidth="231.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="71.0" prefHeight="841.0" prefWidth="374.0" style="-fx-background-color: #03313a;">
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="107.0" onAction="#doctorOnAction" prefHeight="112.0" prefWidth="446.0" stylesheets="@../pic/Style.css" text="Doctor Manage" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="240.0" onAction="#empOnAction" prefHeight="131.0" prefWidth="446.0" stylesheets="@../pic/Style.css" text="Employee Mange" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="402.0" prefHeight="112.0" prefWidth="446.0" stylesheets="@../pic/Style.css" text="Income Mange" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="723.0" onAction="#logoutOnAction" prefHeight="104.0" prefWidth="446.0" stylesheets="@../pic/out.css" text="LOG OUT" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@../pic/icons8-user-48.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#00e896" layoutX="85.0" layoutY="71.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="101.0" layoutY="63.0" text="ONLINE" textFill="WHITE" />
+            <Label layoutX="79.0" layoutY="37.0" prefHeight="21.0" prefWidth="71.0" text="Manager" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Separator layoutX="-3.0" layoutY="89.0" prefHeight="2.0" prefWidth="447.0" />
+            <ImageView fitHeight="82.0" fitWidth="78.0" layoutX="343.0" layoutY="122.0">
+               <image>
+                  <Image url="@../pic/medical-team.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="1.0" layoutY="566.0" onAction="#MedicineOnAction" prefHeight="112.0" prefWidth="446.0" stylesheets="@../pic/Style.css" text="Medicine Manage" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="71.0" fitWidth="78.0" layoutX="343.0" layoutY="270.0">
+               <image>
+                  <Image url="@../pic/team-work.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="347.0" layoutY="423.0">
+               <image>
+                  <Image url="@../pic/revenue%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="78.0" layoutX="343.0" layoutY="581.0">
+               <image>
+                  <Image url="@../pic/medicineDTO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="347.0" layoutY="740.0">
+               <image>
+                  <Image url="@../pic/shutdown%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane3" layoutX="447.0" layoutY="71.0" prefHeight="841.0" prefWidth="1478.0" />
+   </children>
+</AnchorPane>

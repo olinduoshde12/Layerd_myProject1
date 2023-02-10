@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane2" prefHeight="841.0" prefWidth="1478.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.manager.AddMedicineFormController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="1615.0" style="-fx-background-color: #033330;">
+         <children>
+            <Label alignment="CENTER" layoutX="644.0" layoutY="17.0" prefHeight="47.0" prefWidth="288.0" text="Drug  AddForm" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblId" alignment="CENTER" layoutX="218.0" layoutY="144.0" prefHeight="47.0" prefWidth="288.0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="156.0" text="Medicine Id -:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="245.0" prefHeight="35.0" prefWidth="250.0" text="Medicine Description :-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescription" layoutX="296.0" layoutY="239.0" prefHeight="47.0" prefWidth="336.0" style="-fx-background-radius: 50;" />
+      <Label layoutX="671.0" layoutY="245.0" text="Medicine Disses Type-:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="colType2" layoutX="923.0" layoutY="239.0" prefHeight="47.0" prefWidth="218.0" />
+      <Label layoutX="1195.0" layoutY="251.0" text="Medicine qty -:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="1365.0" layoutY="245.0" prefHeight="47.0" prefWidth="69.0" />
+      <Label layoutX="23.0" layoutY="340.0" prefHeight="35.0" prefWidth="288.0" text="Medicine Packet Price :-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrice" layoutX="296.0" layoutY="334.0" prefHeight="47.0" prefWidth="336.0" style="-fx-background-radius: 50;" />
+      <JFXButton layoutX="690.0" layoutY="334.0" onAction="#addOnAction" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #32fbaa; -fx-background-radius: 50;" text="Add">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="923.0" layoutY="334.0" onAction="#DeleteOnAction" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #fc326f; -fx-background-radius: 50;" text="Delete">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1141.0" layoutY="334.0" onAction="#updateOnAction" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #efed0b; -fx-background-radius: 50;" text="Update">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tbl1" layoutX="23.0" layoutY="421.0" prefHeight="398.0" prefWidth="1393.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="288.0" text="Medicne_Id" />
+          <TableColumn fx:id="colDescription" prefWidth="267.0" text="Description" />
+            <TableColumn fx:id="colType" prefWidth="343.0" text="Type" />
+            <TableColumn fx:id="colqty" prefWidth="221.0" text="qty" />
+            <TableColumn fx:id="colPrice" prefWidth="119.0" text="Price" />
+            <TableColumn fx:id="colDelete" prefWidth="152.0" text="Delete" />
+        </columns>
+      </TableView>
+      <TextField fx:id="lblId2" layoutX="180.0" layoutY="139.0" prefHeight="47.0" prefWidth="187.0">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

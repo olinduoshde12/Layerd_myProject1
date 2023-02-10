@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane2" prefHeight="820.0" prefWidth="1501.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.manager.ManagerLoginFormController">
+   <children>
+      <AnchorPane prefHeight="820.0" prefWidth="690.0" style="-fx-background-color: #054030;">
+         <children>
+            <Label alignment="CENTER" layoutX="163.0" layoutY="164.0" prefHeight="75.0" prefWidth="349.0" text="WELCOME !!!!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="47.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="276.0" prefHeight="49.0" prefWidth="647.0" text="Enter your details" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="337.0" prefHeight="49.0" prefWidth="647.0" text=" and start jounary with us" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="195.0" layoutY="551.0" onAction="#signOnAction" prefHeight="49.0" prefWidth="286.0" style="-fx-background-radius: 50; -fx-border-color: WHITE; -fx-border-radius: 50;" stylesheets="@../pic/Style.css" text="SIGN-IN" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="202.0" layoutY="677.0" onAction="#otOnAction" prefHeight="49.0" prefWidth="286.0" style="-fx-background-radius: 50; -fx-border-color: WHITE; -fx-border-radius: 50;" stylesheets="@../pic/out.css" text="LOG-OUT" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="pane23" layoutX="690.0" prefHeight="820.0" prefWidth="813.0">
+         <children>
+            <Label alignment="CENTER" layoutX="197.0" layoutY="51.0" prefHeight="75.0" prefWidth="444.0" text="MANAGER LOGIN">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="47.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUser" labelFloat="true" layoutX="168.0" layoutY="242.0" prefHeight="31.0" prefWidth="524.0" promptText="User_Name">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="151.0" layoutY="527.0" onAction="#s1OnAction" prefHeight="49.0" prefWidth="286.0" style="-fx-background-radius: 50; -fx-border-color: black; -fx-border-radius: 50;" stylesheets="@../pic/Style.css" text="SIGN-IN">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="49.0" fitWidth="57.0" layoutX="248.0" layoutY="711.0">
+               <image>
+                  <Image url="@../pic/icons8-twitter.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="419.0" layoutY="710.0">
+               <image>
+                  <Image url="@../pic/icons8-instagram.gif" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="584.0" layoutY="711.0">
+               <image>
+                  <Image url="@../pic/icons8-facebook-48.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="416.0" layoutY="644.0" text="OR">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="470.0" layoutY="527.0" onAction="#backOnAction" prefHeight="49.0" prefWidth="286.0" style="-fx-background-radius: 50; -fx-border-color: black; -fx-border-radius: 50;" stylesheets="@../pic/Style.css" text="Back">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="txtPassword1" labelFloat="true" layoutX="165.0" layoutY="390.0" prefHeight="31.0" prefWidth="530.0" promptText="Password">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

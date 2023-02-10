@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane2" prefHeight="443.0" prefWidth="1610.0" style="-fx-background-color: #d9f9fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.reciption.DemotologistFormController">
+   <children>
+      <TableView fx:id="tbl1" layoutX="122.0" layoutY="14.0" prefHeight="377.0" prefWidth="1136.0">
+        <columns>
+          <TableColumn fx:id="colD_name" prefWidth="309.9999694824219" text="Doctor_name" />
+          <TableColumn fx:id="colDate" prefWidth="404.0" text="Doctor_Alive_date" />
+            <TableColumn fx:id="colTime" prefWidth="421.0" text="Doctor_Alive_Time" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="444.0" layoutY="400.0" onAction="#searchOnAction" prefHeight="38.0" prefWidth="151.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: blue;" stylesheets="@../pic/Style.css" text="Search">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="713.0" layoutY="400.0" onAction="#BackOnAction" prefHeight="40.0" prefWidth="151.0" style="-fx-background-radius: 50; -fx-border-color: blue; -fx-border-radius: 50;" stylesheets="@../pic/out.css" text="Back">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

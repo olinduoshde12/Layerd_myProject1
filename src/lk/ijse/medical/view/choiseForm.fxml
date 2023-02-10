@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="804.0" prefWidth="1406.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medical.control.reciption.ChoiseFormController">
+   <children>
+      <AnchorPane prefHeight="804.0" prefWidth="1613.0" style="-fx-background-color: #02a688;">
+         <children>
+            <Pane fx:id="colPane" layoutX="510.0" layoutY="150.0" prefHeight="504.0" prefWidth="663.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXComboBox fx:id="colBox" layoutX="101.0" layoutY="226.0" prefHeight="53.0" prefWidth="482.0" />
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="232.0" layoutY="-100.0">
+                     <image>
+                        <Image url="@../pic/heart-attack.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="99.0" layoutY="169.0" text="SELECT YOUR JOB POSSTION">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="34.0" />
+                     </font>
+                  </Label>
+                  <JFXButton alignment="CENTER" layoutX="216.0" layoutY="378.0" onAction="#goOnAction" prefHeight="69.0" prefWidth="242.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #00ffd0;" text="CLICK">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="CENTER" layoutX="192.0" layoutY="115.0" text="MEDICAL CENTER">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
